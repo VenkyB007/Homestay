@@ -27,19 +27,22 @@ Motion, all of it CSS or a few lines of plain JavaScript:
 
 Everything respects the "reduce motion" setting on phones and computers. The site is light theme only, even when the visitor's device is set to dark mode.
 
-## Replacing the dummy content
+## What is real and what is still a placeholder
 
-1. **Name and tagline.** "Gotul Hampi Homestay" appears in the `<title>`, the header, the footer and in `script.js` (the WhatsApp greeting). Find and replace it.
-2. **WhatsApp number.** In `script.js`, set `WHATSAPP_NUMBER` to your number as digits only, with the country code, for example `919876543210`. Also update the `tel:` links (header, FAQ, contact and footer) and the visible numbers.
-3. **Google rating.** The badge in the hero, the "4.9" in the stats and the review summary all show invented numbers. Replace them with yours and link the badge to your Google Maps listing.
-4. **Address and check-in times.** Contact section and footer of `index.html`.
-5. **Rooms and prices.** The four `<article class="room">` blocks. Prices shown are samples.
-6. **Nearby distances.** The "Around Hampi" strip. Distances are rough guesses from Hospet town and should be checked.
-7. **Reviews.** The three cards in "From the guest book" are invented. Replace with real Google reviews or remove.
-8. **FAQ answers.** Edit to match your house rules.
-9. **Map.** Get the embed code from Google Maps (Share, Embed a map) and paste the `<iframe>` in place of the `contact__map` link.
-10. **Instagram link** in the footer.
-11. **Logo.** The small house mark in the header is an inline SVG. Swap it for your own logo if you make one, and update the favicon at the top of `index.html`.
+Done: name, photos, WhatsApp and phone number (6360250021, same for both), the map pin and embed, the nearby distances (measured by road from the house), the nearby-place photos (Wikimedia Commons, credited in the footer). There is no email on purpose, and no price: the house is booked as one unit and visitors are asked to message for the rate. The reviews section was removed.
+
+Still placeholder text in `index.html`, search for `TODO`:
+
+1. **About section story** (family of four, three generations, opened in 2024).
+2. **Address.** Only the village and pin code are real. Add the house number or street in the contact section and footer.
+3. **FAQ answers.** Parking, meals, drivers, cycle hire and the check-in times are samples.
+4. **Footer line** "Registered homestay, Karnataka Tourism". Remove if not true.
+5. **Instagram link** in the footer.
+6. **Logo.** The small house mark in the header is an inline SVG. Swap it for your own logo if you make one, and update the favicon at the top of `index.html`.
+
+## Publishing
+
+The site is served by GitHub Pages from the `main` branch of `github.com/VenkyB007/Homestay` at https://venkyb007.github.io/Homestay/. Every push to `main` redeploys it within a minute or two.
 
 ## Replacing the photos
 
