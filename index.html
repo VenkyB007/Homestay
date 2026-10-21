@@ -19,7 +19,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Manrope:wght@400;500;600;700&family=Caveat:wght@500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/regular/style.css">
   <link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/fill/style.css">
-  <link rel="stylesheet" href="styles.css?v=2">
+  <link rel="stylesheet" href="styles.css?v=3">
 </head>
 <body>
 
@@ -118,85 +118,56 @@
       </div>
     </section>
 
-    <!-- ===== THE HOUSE ===== -->
+    <!-- ===== OUR SPACES ===== -->
     <section class="rooms" id="rooms">
       <div class="wrap">
         <div class="section-head section-head--center" data-stagger>
-          <p class="eyebrow reveal">The house</p>
-          <h2 class="reveal">A whole two-bedroom home upstairs, booked as one.</h2>
-          <p class="section-head__lede reveal">You never share it with another group. Two air-conditioned bedrooms, a hall with a kitchenette, two bathrooms and the terrace, all behind your own front door.</p>
+          <h2 class="reveal">Our homestay spaces</h2>
         </div>
-
-        <div class="house-rate reveal">
-          <ul class="house-rate__facts">
-            <li><i class="ph ph-bed" aria-hidden="true"></i>2 bedrooms</li>
-            <li><i class="ph ph-users" aria-hidden="true"></i>Sleeps 4</li>
-            <li><i class="ph ph-bathtub" aria-hidden="true"></i>2 bathrooms</li>
-            <li><i class="ph ph-cooking-pot" aria-hidden="true"></i>Kitchenette</li>
-            <li><i class="ph ph-sun-horizon" aria-hidden="true"></i>Private terrace</li>
-          </ul>
-          <div class="house-rate__price">
-            <strong>One rate for the whole house</strong>
-            <span>Message us on WhatsApp for the current price. Breakfast is included.</span>
-          </div>
-        </div>
-
-        <div class="rooms__grid" data-stagger>
-          <article class="room reveal">
-            <button class="zoom room__photo" type="button" aria-label="Enlarge photo of the first bedroom">
-              <img src="images/room-1.jpg" width="1200" height="933" alt="The first bedroom: a teak double bed, soft yellow walls and a cane armchair" loading="lazy">
-            </button>
-            <div class="room__body">
-              <div class="room__title"><h3>Bedroom one</h3></div>
-              <p>A bright double with soft yellow walls, a teak bed, air conditioning and a cane armchair by the door. Marble bathroom with a rain shower.</p>
-              <ul class="room__facts">
-                <li><i class="ph ph-bed" aria-hidden="true"></i>Double bed</li>
-                <li><i class="ph ph-snowflake" aria-hidden="true"></i>AC</li>
-                <li><i class="ph ph-bathtub" aria-hidden="true"></i>Attached bath</li>
-              </ul>
+        <div class="spaces" data-stagger>
+          <article class="space reveal">
+            <div class="space__frame">
+              <button class="zoom space__photo" type="button" aria-label="Enlarge photo of bedroom one">
+                <img src="images/room-1.jpg" width="1200" height="933" alt="The first bedroom: a teak double bed, soft yellow walls and a cane armchair" loading="lazy">
+              </button>
             </div>
+            <button class="space__label js-space-open" type="button" aria-label="See photo of bedroom one">
+              <span>Bedroom one</span>
+              <span class="space__arrow" aria-hidden="true"><i class="ph ph-caret-right"></i></span>
+            </button>
           </article>
-
-          <article class="room reveal">
-            <button class="zoom room__photo" type="button" aria-label="Enlarge photo of the second bedroom">
-              <img src="images/room-2.jpg" width="1200" height="933" alt="The second bedroom: exposed granite walls, a double bed by the window and a cane chair" loading="lazy">
-            </button>
-            <div class="room__body">
-              <div class="room__title"><h3>Bedroom two</h3></div>
-              <p>Walls of local granite and a polished stone floor that stays cool through the afternoon. Double bed by the window, air conditioning, kettle and a cane chair.</p>
-              <ul class="room__facts">
-                <li><i class="ph ph-bed" aria-hidden="true"></i>Double bed</li>
-                <li><i class="ph ph-snowflake" aria-hidden="true"></i>AC</li>
-              </ul>
+          <article class="space reveal">
+            <div class="space__frame">
+              <button class="zoom space__photo" type="button" aria-label="Enlarge photo of bedroom two">
+                <img src="images/room-2.jpg" width="1200" height="933" alt="The second bedroom: exposed granite walls, a double bed by the window and a cane chair" loading="lazy">
+              </button>
             </div>
+            <button class="space__label js-space-open" type="button" aria-label="See photo of bedroom two">
+              <span>Bedroom two</span>
+              <span class="space__arrow" aria-hidden="true"><i class="ph ph-caret-right"></i></span>
+            </button>
           </article>
-
-          <article class="room reveal">
-            <button class="zoom room__photo" type="button" aria-label="Enlarge photo of the hall and kitchenette">
-              <img src="images/hall.jpg" width="1200" height="933" alt="The hall, with a fridge and a marble-top table, opening into a bedroom" loading="lazy">
-            </button>
-            <div class="room__body">
-              <div class="room__title"><h3>Hall and kitchenette</h3></div>
-              <p>A small kitchenette with a fridge, kettle and a marble-top table, between the two bedrooms. Make tea, keep fruit cold, eat in when you feel like it.</p>
-              <ul class="room__facts">
-                <li><i class="ph ph-cooking-pot" aria-hidden="true"></i>Fridge and kettle</li>
-                <li><i class="ph ph-fork-knife" aria-hidden="true"></i>Dining table</li>
-              </ul>
+          <article class="space reveal">
+            <div class="space__frame">
+              <button class="zoom space__photo" type="button" aria-label="Enlarge photo of the hall and kitchenette">
+                <img src="images/hall.jpg" width="1200" height="933" alt="The hall, with a fridge and a marble-top table, opening into a bedroom" loading="lazy">
+              </button>
             </div>
+            <button class="space__label js-space-open" type="button" aria-label="See photo of the hall and kitchenette">
+              <span>Hall and kitchenette</span>
+              <span class="space__arrow" aria-hidden="true"><i class="ph ph-caret-right"></i></span>
+            </button>
           </article>
-
-          <article class="room reveal">
-            <button class="zoom room__photo" type="button" aria-label="Enlarge photo of the terrace">
-              <img src="images/terrace.jpg" width="1200" height="933" alt="The terrace at night, lanterns lit, cane sofas along the railing" loading="lazy">
-            </button>
-            <div class="room__body">
-              <div class="room__title"><h3>Terrace</h3></div>
-              <p>Red oxide floor, cane sofas, lanterns in the evening and treetops all round. Breakfast is up here, and so are the quiet hours after dark.</p>
-              <ul class="room__facts">
-                <li><i class="ph ph-coffee" aria-hidden="true"></i>Breakfast spot</li>
-                <li><i class="ph ph-moon-stars" aria-hidden="true"></i>Evening sit-out</li>
-              </ul>
+          <article class="space reveal">
+            <div class="space__frame">
+              <button class="zoom space__photo" type="button" aria-label="Enlarge photo of the terrace">
+                <img src="images/terrace.jpg" width="1200" height="933" alt="The terrace at night, lanterns lit, cane sofas along the railing" loading="lazy">
+              </button>
             </div>
+            <button class="space__label js-space-open" type="button" aria-label="See photo of the terrace">
+              <span>Terrace</span>
+              <span class="space__arrow" aria-hidden="true"><i class="ph ph-caret-right"></i></span>
+            </button>
           </article>
         </div>
       </div>
@@ -208,29 +179,24 @@
       <div class="wrap">
         <div class="section-head section-head--center" data-stagger>
           <p class="eyebrow reveal">Why choose us</p>
-          <h2 class="reveal">Amenities and facilities</h2>
+          <h2 class="reveal">Amenities &amp; facilities</h2>
         </div>
         <ul class="amen" data-stagger>
-          <li class="reveal"><span class="amen__icon"><i class="ph ph-coffee" aria-hidden="true"></i></span><h3>Breakfast every day</h3><p>Idli, dosa, upma or eggs and toast, with filter coffee.</p></li>
-          <li class="reveal"><span class="amen__icon"><i class="ph ph-cooking-pot" aria-hidden="true"></i></span><h3>Home-cooked meals</h3><p>Lunch and dinner on request, North Karnataka style.</p></li>
-          <li class="reveal"><span class="amen__icon"><i class="ph ph-wifi-high" aria-hidden="true"></i></span><h3>Wi-Fi throughout</h3><p>Fibre line, fine for calls and streaming.</p></li>
-          <li class="reveal"><span class="amen__icon"><i class="ph ph-snowflake" aria-hidden="true"></i></span><h3>Air conditioning</h3><p>In both bedrooms. Hospet summers are no joke.</p></li>
-          <li class="reveal"><span class="amen__icon"><i class="ph ph-drop" aria-hidden="true"></i></span><h3>Hot water, filtered water</h3><p>Geysers in every bath, a filter on the landing.</p></li>
-          <li class="reveal"><span class="amen__icon"><i class="ph ph-bicycle" aria-hidden="true"></i></span><h3>Cycles and scooters</h3><p>Hire by the day. We will draw you a route.</p></li>
-          <li class="reveal"><span class="amen__icon"><i class="ph ph-car" aria-hidden="true"></i></span><h3>Pick-up and drop</h3><p>From Hospet station or Vidyanagar airport.</p></li>
-          <li class="reveal"><span class="amen__icon"><i class="ph ph-map-trifold" aria-hidden="true"></i></span><h3>Guided day trips</h3><p>Hampi, Anegundi and the bear sanctuary with a local driver.</p></li>
+          <li class="reveal"><span class="amen__icon"><i class="ph ph-sun-horizon" aria-hidden="true"></i></span><h3>Private terrace</h3><p>Cane sofas, lanterns in the evening and treetops all round. Breakfast is served up here.</p></li>
+          <li class="reveal"><span class="amen__icon"><i class="ph ph-cooking-pot" aria-hidden="true"></i></span><h3>Kitchenette</h3><p>A fridge, kettle and dining table in the hall, yours to use through the stay.</p></li>
+          <li class="reveal"><span class="amen__icon"><i class="ph ph-snowflake" aria-hidden="true"></i></span><h3>Air conditioning</h3><p>In both bedrooms, with hot water in both bathrooms.</p></li>
+          <li class="reveal"><span class="amen__icon"><i class="ph ph-bowl-food" aria-hidden="true"></i></span><h3>Homely food</h3><p>Breakfast included. Home-cooked lunch and dinner on request.</p></li>
         </ul>
 
-        <!-- TODO: real numbers -->
         <dl class="stats" data-stagger>
-          <div class="reveal"><dt><span data-count="2">0</span></dt><dd>Bedrooms, all yours</dd></div>
-          <div class="reveal"><dt><span data-count="15">0</span> min</dt><dd>Drive to Hampi</dd></div>
-          <div class="reveal"><dt><span data-count="4">0</span></dt><dd>Guests, house to yourselves</dd></div>
-          <div class="reveal"><dt><span data-count="3">0</span></dt><dd>Generations in Hospet</dd></div>
+          <div class="reveal"><dt><span data-count="2">0</span></dt><dd>Bedrooms</dd></div>
+          <div class="reveal"><dt><span data-count="4">0</span></dt><dd>Guests, whole house</dd></div>
+          <div class="reveal"><dt><span data-count="8">0</span><sup>km</sup></dt><dd>To Hampi</dd></div>
+          <div class="reveal"><dt><span data-count="100">0</span><sup>%</sup></dt><dd>Homely feel</dd></div>
         </dl>
       </div>
       <div class="block__tab">
-        <a class="btn btn--soft" href="#contact">Ask us anything</a>
+        <a class="btn btn--outline" href="#contact">Learn more</a>
       </div>
     </section>
 
@@ -394,6 +360,10 @@
         <div class="faq__list" data-stagger>
           <!-- TODO: edit answers to match your house rules -->
           <div class="faq__item reveal">
+            <button class="faq__q" type="button" aria-expanded="false" aria-controls="faq-0" id="faq-0-btn">How many rooms are there?<i class="ph ph-plus" aria-hidden="true"></i></button>
+            <div class="faq__a" id="faq-0" role="region" aria-labelledby="faq-0-btn"><div><p>Two air-conditioned bedrooms, a hall with a kitchenette, two bathrooms and the terrace. The whole house goes to one group at a time, for one rate. Message us on WhatsApp for the current price. Breakfast is included.</p></div></div>
+          </div>
+          <div class="faq__item reveal">
             <button class="faq__q" type="button" aria-expanded="false" aria-controls="faq-1" id="faq-1-btn">How far is the house from Hampi?<i class="ph ph-plus" aria-hidden="true"></i></button>
             <div class="faq__a" id="faq-1" role="region" aria-labelledby="faq-1-btn"><div><p>About 8 km to Virupaksha Temple, which is 10 to 15 minutes by car or auto. Hospet railway station is 6 km the other way, about 10 minutes.</p></div></div>
           </div>
@@ -467,6 +437,6 @@
     <button class="lightbox__btn lightbox__next" type="button" id="lightbox-next" aria-label="Next photo"><i class="ph ph-arrow-right" aria-hidden="true"></i></button>
   </dialog>
 
-  <script src="script.js?v=2"></script>
+  <script src="script.js?v=3"></script>
 </body>
 </html>

@@ -8,7 +8,7 @@
   --surface: #ffffff;
   --sand: #f4f7ee;
   --sand-2: #eaf3d8;
-  --olive: #b7c8ae;
+  --olive: #b0c4b1;
   --olive-ink: #ffffff;
   --ink: #1d1d1b;
   --muted: #666b60;
@@ -189,6 +189,7 @@ section { padding: 4.5rem 0; }
 .btn--primary { background: var(--accent); color: var(--accent-ink); box-shadow: 0 10px 24px rgba(243, 200, 29, 0.28); }
 .btn--green { background: var(--green); color: #fff; box-shadow: 0 10px 24px rgba(91, 171, 60, 0.28); }
 .btn--soft { background: var(--sand-2); color: var(--ink); border-color: color-mix(in srgb, var(--accent) 45%, transparent); }
+.btn--outline { background: #e8f5d3; color: var(--ink); border-color: var(--green); }
 .btn--sm { min-height: 44px; padding: 0.6rem 1.25rem; font-size: 0.875rem; }
 .btn--block { width: 100%; }
 
@@ -495,69 +496,49 @@ section { padding: 4.5rem 0; }
 }
 @media (max-width: 899px) { .chip--float { left: 1rem; bottom: 1rem; } }
 
-/* ---------- rooms ---------- */
-.rooms__grid {
+/* ---------- our spaces ---------- */
+.spaces {
   display: grid;
   gap: 1.25rem;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
 }
-.room {
-  display: flex; flex-direction: column;
-  padding: 0.75rem;
-  border-radius: var(--r-lg);
-  background: linear-gradient(180deg, var(--surface) 0%, var(--surface) 45%, var(--sand-2) 100%);
-  border: 1px solid var(--line);
+.space {
+  display: flex; flex-direction: column; gap: 0.9rem;
+  padding: 0.85rem;
+  border-radius: 32px;
+  background: linear-gradient(180deg, #f6f9ea 0%, #ecf5d8 100%);
   transition: transform 0.5s var(--ease), box-shadow 0.5s var(--ease);
 }
-.room--shared { background: linear-gradient(160deg, color-mix(in srgb, var(--leaf-2) 28%, var(--surface)), var(--sand) 70%, var(--surface)); border-color: color-mix(in srgb, var(--leaf) 30%, transparent); }
 @media (hover: hover) and (pointer: fine) {
-  .room:hover { transform: translateY(-6px); box-shadow: var(--shadow); }
-  .room:hover .room__photo img { transform: scale(1.05); }
+  .space:hover { transform: translateY(-6px); box-shadow: var(--shadow); }
+  .space:hover .space__photo img { transform: scale(1.05); }
 }
-.room__photo {
-  display: block; width: 100%; padding: 0;
-  border: 5px solid var(--accent);
-  background: var(--accent); cursor: zoom-in;
-  border-radius: var(--r-md);
-  overflow: hidden;
+.space__frame {
+  padding: 0.7rem;
+  border-radius: 26px;
+  background: linear-gradient(180deg, #f5e95a 0%, #f3df53 55%, #eee9a6 100%);
 }
-.room__photo img { border-radius: calc(var(--r-md) - 5px); }
-.room__photo img { width: 100%; aspect-ratio: 9 / 7; object-fit: cover; transition: transform 1s var(--ease); }
-.room__body { padding: 1.1rem 0.6rem 0.75rem; display: flex; flex-direction: column; gap: 0.65rem; flex: 1; }
-.room__title { display: flex; justify-content: space-between; align-items: baseline; gap: 0.5rem; flex-wrap: wrap; }
-.room__title h3 { font-size: 1.2rem; }
-.section-head__lede { max-width: 42rem; margin: 0.9rem auto 0; color: var(--muted); font-size: 1rem; }
-
-/* one house, one rate */
-.house-rate {
-  display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 1rem 2rem;
-  margin: 0 0 1.5rem;
-  padding: 1rem 1.25rem;
-  border-radius: var(--r-lg);
-  background: linear-gradient(160deg, color-mix(in srgb, var(--leaf-2) 28%, var(--surface)), var(--sand) 70%, var(--surface));
-  border: 1px solid color-mix(in srgb, var(--leaf) 30%, transparent);
+.space__photo { display: block; width: 100%; padding: 0; border: 0; background: none; cursor: zoom-in; border-radius: 18px; overflow: hidden; }
+.space__photo img { width: 100%; aspect-ratio: 8 / 7; object-fit: cover; border-radius: 18px; transition: transform 1s var(--ease); }
+.space__label {
+  display: flex; align-items: center; justify-content: space-between; gap: 0.75rem;
+  width: 100%; min-height: var(--tap);
+  padding: 0.5rem 0.55rem 0.5rem 1.25rem;
+  border: 0; border-radius: 999px;
+  background: var(--surface); color: var(--ink);
+  font: 600 0.95rem/1.2 var(--sans);
+  text-align: left; cursor: pointer;
+  transition: box-shadow 0.3s var(--ease);
 }
-.house-rate__facts { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 0.4rem; }
-.house-rate__facts li { display: inline-flex; align-items: center; gap: 0.35rem; padding: 0.4rem 0.75rem; border-radius: 999px; background: var(--surface); font-size: 0.85rem; font-weight: 600; }
-.house-rate__facts li i { color: var(--leaf); font-size: 1rem; }
-.house-rate__price { display: flex; flex-direction: column; gap: 0.15rem; }
-.house-rate__price strong { font-family: var(--head); font-weight: 500; font-size: 1.5rem; line-height: 1.1; }
-.house-rate__price strong small { font-size: 0.85rem; font-weight: 500; color: var(--muted); font-family: var(--body, inherit); }
-.house-rate__price span { font-size: 0.85rem; color: var(--muted); }
-.field__hint { margin: 0.35rem 0 0; font-size: 0.8rem; color: var(--muted); }
-.room__body > p { color: var(--muted); font-size: 0.9rem; flex: 1; }
-.room__facts {
-  list-style: none; padding: 0; margin: 0.25rem 0 0;
-  display: flex; flex-wrap: wrap; gap: 0.4rem;
+.space__arrow {
+  width: 32px; height: 32px; flex-shrink: 0;
+  display: inline-flex; align-items: center; justify-content: center;
+  border-radius: 50%; background: var(--sand-2); color: var(--ink);
+  font-size: 1rem; transition: transform 0.3s var(--ease), background-color 0.3s var(--ease);
 }
-.room__facts li {
-  display: inline-flex; align-items: center; gap: 0.35rem;
-  padding: 0.3rem 0.7rem;
-  background: var(--surface);
-  border-radius: 999px;
-  font-size: 0.78rem; font-weight: 600;
+@media (hover: hover) and (pointer: fine) {
+  .space__label:hover .space__arrow { transform: translateX(3px); background: var(--accent); }
 }
-.room__facts i { color: var(--leaf); }
 
 /* ---------- amenities ---------- */
 .amenities .wrap { position: relative; z-index: 1; }
@@ -567,12 +548,12 @@ section { padding: 4.5rem 0; }
   grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
 }
 .amen li {
-  padding: 1.5rem;
-  background: var(--surface);
+  padding: 2.25rem 1.4rem 1.5rem;
+  background: #e8f5d3;
   color: var(--ink);
-  border: 1px solid color-mix(in srgb, var(--olive-ink) 50%, transparent);
-  border-radius: var(--r-lg);
-  box-shadow: var(--shadow-sm);
+  border: 0;
+  border-radius: 32px;
+  border-top-left-radius: 48px;
   transition: transform 0.5s var(--ease), box-shadow 0.4s var(--ease);
 }
 @media (hover: hover) and (pointer: fine) {
@@ -583,13 +564,13 @@ section { padding: 4.5rem 0; }
   width: 56px; height: 56px;
   display: inline-flex; align-items: center; justify-content: center;
   border-radius: 16px;
-  background: var(--sand-2); color: var(--ink);
-  font-size: 1.6rem;
-  margin-bottom: 1rem;
+  background: var(--surface); color: var(--ink);
+  font-size: 1.8rem;
+  margin-bottom: 1.1rem;
   transition: transform 0.5s var(--ease);
 }
-.amen h3 { font-size: 1.15rem; color: var(--ink); }
-.amen p { font-size: 0.875rem; color: var(--muted); margin-top: 0.4rem; }
+.amen h3 { font-size: 1.45rem; color: var(--ink); }
+.amen p { font-size: 0.95rem; color: var(--muted); margin-top: 0.5rem; }
 .float--amen { right: 6%; top: 8%; --base: 40deg; width: clamp(70px, 9vw, 140px); filter: none; }
 
 .stats {
@@ -598,13 +579,13 @@ section { padding: 4.5rem 0; }
   gap: 1rem;
   margin: 3rem 0 0;
   padding: 1.5rem 0 0;
-  border-top: 1px solid color-mix(in srgb, var(--olive-ink) 35%, transparent);
+  border-top: 0;
 }
-@media (min-width: 700px) { .stats { grid-template-columns: repeat(4, 1fr); } }
-.stats div { text-align: center; }
+@media (min-width: 700px) { .stats { grid-template-columns: repeat(4, 1fr); gap: 0; } }
+.stats div { text-align: left; padding: 0.75rem 1.25rem; border-left: 1px solid color-mix(in srgb, var(--olive-ink) 35%, transparent); }
 .stats dt { font-family: var(--head); font-size: clamp(2rem, 4vw, 3rem); line-height: 1; font-weight: 400; }
 .stats dd { margin: 0.35rem 0 0; font-size: 0.85rem; color: color-mix(in srgb, var(--olive-ink) 88%, transparent); }
-.stats sup { font-size: 0.45em; vertical-align: top; margin-left: 0.1em; }
+.stats sup { font-size: 0.4em; vertical-align: top; margin-left: 0.15em; line-height: 1; }
 
 /* ---------- gallery ---------- */
 .gallery__hint { font-size: 0.9rem; }

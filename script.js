@@ -253,6 +253,13 @@ if (lightbox && zooms.length && typeof lightbox.showModal === "function") {
   const close = () => lightbox.close();
 
   zooms.forEach((btn, i) => btn.addEventListener("click", () => open(i)));
+  // The label pill under each space photo opens the same photo.
+  document.querySelectorAll(".js-space-open").forEach((pill) => {
+    pill.addEventListener("click", () => {
+      const photo = pill.closest(".space")?.querySelector(".zoom");
+      if (photo) photo.click();
+    });
+  });
   document.getElementById("lightbox-close").addEventListener("click", close);
   document.getElementById("lightbox-prev").addEventListener("click", () => show(index - 1));
   document.getElementById("lightbox-next").addEventListener("click", () => show(index + 1));
