@@ -1,0 +1,527 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- TODO: replace the name and description once final details are ready -->
+  <title>Gotul Hampi Homestay | Hospet, near Hampi</title>
+  <meta name="description" content="A quiet family-run homestay in Hospet, Karnataka. A whole two-bedroom home to yourselves, home-cooked meals and a private terrace, fifteen minutes from the Hampi ruins.">
+  <meta property="og:title" content="Gotul Hampi Homestay | Hospet, near Hampi">
+  <meta property="og:description" content="A quiet family-run homestay in Hospet, Karnataka, fifteen minutes from Hampi.">
+  <meta property="og:image" content="https://venkyb007.github.io/Homestay/images/og.jpg">
+  <meta name="theme-color" content="#faf7f1">
+
+  <!-- Simple logo favicon. TODO: swap for a real logo if you make one -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23f0b429'/%3E%3Cpath d='M32 14 12 32h6v16h28V32h6z' fill='%231f1b16'/%3E%3C/svg%3E">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/regular/style.css">
+  <link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/fill/style.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <a class="skip" href="#rooms">Skip to content</a>
+
+  <!-- ===== HEADER ===== -->
+  <header class="nav" id="top">
+    <div class="wrap nav__inner">
+      <a class="brand" href="#top" aria-label="Gotul Hampi Homestay, home">
+        <!-- TODO: homestay logo -->
+        <svg class="brand__mark" viewBox="0 0 48 48" aria-hidden="true">
+          <rect width="48" height="48" rx="14" fill="var(--accent)"/>
+          <path d="M24 11 9 25h5v12h20V25h5z" fill="var(--ink)"/>
+          <path d="M31 19c4-6 10-6 10-6s0 6-6 9c-2 1-4 0-4 0z" fill="var(--leaf)"/>
+        </svg>
+        <span class="brand__text">
+          <span class="brand__name">Gotul Hampi</span>
+          <span class="brand__place">Homestay, Hospet</span>
+        </span>
+      </a>
+
+      <nav class="menu" id="menu" aria-label="Main">
+        <a href="#about">About</a>
+        <a href="#rooms">The house</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#around">Around Hampi</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="nav__actions">
+        <a class="pill pill--phone" href="tel:+916360250021">
+          <span class="pill__icon"><i class="ph ph-phone-call" aria-hidden="true"></i></span>
+          <span>+91 63602 50021</span>
+        </a>
+        <a class="btn btn--primary btn--sm js-whatsapp" href="#contact">Book your stay</a>
+        <button class="nav__toggle" aria-expanded="false" aria-controls="menu" aria-label="Open menu">
+          <i class="ph ph-list" aria-hidden="true"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ===== HERO ===== -->
+    <section class="hero">
+      <div class="hero__frame">
+        <img class="hero__bg" src="images/hero.jpg" width="2000" height="1200" alt="" fetchpriority="high">
+        <div class="hero__shade" aria-hidden="true"></div>
+
+        <!-- Floating leaves. Pure decoration, moved by scroll. -->
+        <svg class="float float--1" data-float="0.35" data-rotate="-18" viewBox="0 0 120 160" aria-hidden="true"><path d="M60 4C28 36 10 80 22 130c3 12 10 22 18 26 2-30 16-62 34-86-10 32-18 62-14 86 30-10 50-46 52-86C114 42 92 14 60 4Z" fill="var(--leaf)"/><path d="M58 20c-2 48 2 92 20 136" fill="none" stroke="rgba(0,0,0,.18)" stroke-width="3" stroke-linecap="round"/></svg>
+        <svg class="float float--2" data-float="0.22" data-rotate="14" viewBox="0 0 120 160" aria-hidden="true"><path d="M60 4C28 36 10 80 22 130c3 12 10 22 18 26 2-30 16-62 34-86-10 32-18 62-14 86 30-10 50-46 52-86C114 42 92 14 60 4Z" fill="var(--leaf-2)"/></svg>
+        <svg class="float float--3" data-float="0.5" data-rotate="30" viewBox="0 0 120 160" aria-hidden="true"><path d="M60 4C28 36 10 80 22 130c3 12 10 22 18 26 2-30 16-62 34-86-10 32-18 62-14 86 30-10 50-46 52-86C114 42 92 14 60 4Z" fill="var(--leaf)"/></svg>
+
+        <div class="hero__card">
+          <p class="eyebrow intro" style="--i:0">Hospet, Karnataka</p>
+          <h1 class="intro" style="--i:1">A quiet family home, fifteen minutes from Hampi.</h1>
+          <p class="lede intro" style="--i:2">A whole two-bedroom home to yourselves, home-cooked Kannadiga meals, and a terrace to come back to after a day among the boulders.</p>
+          <div class="hero__cta intro" style="--i:3">
+            <a class="btn btn--primary js-whatsapp" href="#contact">Book your stay</a>
+            <a class="btn btn--soft" href="#rooms">See the house</a>
+          </div>
+          <ul class="ticks intro" style="--i:4">
+            <li><i class="ph-fill ph-check-circle" aria-hidden="true"></i>Family run</li>
+            <li><i class="ph-fill ph-check-circle" aria-hidden="true"></i>Home-cooked food</li>
+            <li><i class="ph-fill ph-check-circle" aria-hidden="true"></i>Near the ruins</li>
+          </ul>
+        </div>
+
+        <!-- TODO: real Google rating and review count, link to your Google Maps listing -->
+        <a class="rating intro" style="--i:5" href="https://maps.app.goo.gl/dJ26DpSck7o4zAxC6" target="_blank" rel="noopener">
+          <span class="rating__score">4.9</span>
+          <span class="rating__meta">
+            <span class="stars" aria-label="5 out of 5 stars"><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i></span>
+            <span>38 Google reviews</span>
+          </span>
+        </a>
+      </div>
+    </section>
+
+    <!-- ===== ABOUT / WHY STAY ===== -->
+    <section class="block block--sand" id="about">
+      <div class="wrap split">
+        <div class="split__copy" data-stagger>
+          <p class="eyebrow reveal">Why Gotul</p>
+          <h2 class="reveal">Somewhere calm to come back to, with people who know Hampi.</h2>
+          <p class="reveal">We are a family of four who have lived in Hospet for three generations. In 2024 we opened the upstairs of our home to guests, because the best part of a trip to Hampi is having a quiet place to return to at the end of the day.</p>
+          <ul class="checklist reveal">
+            <li><i class="ph-fill ph-check-circle" aria-hidden="true"></i>Your own key and your own door to the terrace</li>
+            <li><i class="ph-fill ph-check-circle" aria-hidden="true"></i>Breakfast on the terrace, lunch and dinner on request</li>
+            <li><i class="ph-fill ph-check-circle" aria-hidden="true"></i>Cycle routes, drivers and early-start advice from us</li>
+          </ul>
+          <a class="btn btn--primary reveal" href="#rooms">See the house</a>
+        </div>
+        <figure class="split__media reveal reveal--late">
+          <img src="images/about.jpg" width="1200" height="900" alt="The upstairs terrace, with its cane sofa and a view over the trees" loading="lazy">
+          <figcaption class="chip chip--float" data-float="0.12">
+            <i class="ph ph-sun-horizon" aria-hidden="true"></i>
+            <span><strong>Breakfast on the terrace</strong><br>7 to 10 every morning</span>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ===== THE HOUSE ===== -->
+    <section class="rooms" id="rooms">
+      <div class="wrap">
+        <div class="section-head section-head--center" data-stagger>
+          <p class="eyebrow reveal">The house</p>
+          <h2 class="reveal">A whole two-bedroom home upstairs, booked as one.</h2>
+          <p class="section-head__lede reveal">You never share it with another group. Two air-conditioned bedrooms, a hall with a kitchenette, two bathrooms and the terrace, all behind your own front door.</p>
+        </div>
+
+        <div class="house-rate reveal">
+          <ul class="house-rate__facts">
+            <li><i class="ph ph-bed" aria-hidden="true"></i>2 bedrooms</li>
+            <li><i class="ph ph-users" aria-hidden="true"></i>Sleeps 4</li>
+            <li><i class="ph ph-bathtub" aria-hidden="true"></i>2 bathrooms</li>
+            <li><i class="ph ph-cooking-pot" aria-hidden="true"></i>Kitchenette</li>
+            <li><i class="ph ph-sun-horizon" aria-hidden="true"></i>Private terrace</li>
+          </ul>
+          <div class="house-rate__price">
+            <strong>One rate for the whole house</strong>
+            <span>Message us on WhatsApp for the current price. Breakfast is included.</span>
+          </div>
+        </div>
+
+        <div class="rooms__grid" data-stagger>
+          <article class="room reveal">
+            <button class="zoom room__photo" type="button" aria-label="Enlarge photo of the first bedroom">
+              <img src="images/room-1.jpg" width="1200" height="933" alt="The first bedroom: a teak double bed, soft yellow walls and a cane armchair" loading="lazy">
+            </button>
+            <div class="room__body">
+              <div class="room__title"><h3>Bedroom one</h3></div>
+              <p>A bright double with soft yellow walls, a teak bed, air conditioning and a cane armchair by the door. Marble bathroom with a rain shower.</p>
+              <ul class="room__facts">
+                <li><i class="ph ph-bed" aria-hidden="true"></i>Double bed</li>
+                <li><i class="ph ph-snowflake" aria-hidden="true"></i>AC</li>
+                <li><i class="ph ph-bathtub" aria-hidden="true"></i>Attached bath</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="room reveal">
+            <button class="zoom room__photo" type="button" aria-label="Enlarge photo of the second bedroom">
+              <img src="images/room-2.jpg" width="1200" height="933" alt="The second bedroom: exposed granite walls, a double bed by the window and a cane chair" loading="lazy">
+            </button>
+            <div class="room__body">
+              <div class="room__title"><h3>Bedroom two</h3></div>
+              <p>Walls of local granite and a polished stone floor that stays cool through the afternoon. Double bed by the window, air conditioning, kettle and a cane chair.</p>
+              <ul class="room__facts">
+                <li><i class="ph ph-bed" aria-hidden="true"></i>Double bed</li>
+                <li><i class="ph ph-snowflake" aria-hidden="true"></i>AC</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="room reveal">
+            <button class="zoom room__photo" type="button" aria-label="Enlarge photo of the hall and kitchenette">
+              <img src="images/hall.jpg" width="1200" height="933" alt="The hall, with a fridge and a marble-top table, opening into a bedroom" loading="lazy">
+            </button>
+            <div class="room__body">
+              <div class="room__title"><h3>Hall and kitchenette</h3></div>
+              <p>A small kitchenette with a fridge, kettle and a marble-top table, between the two bedrooms. Make tea, keep fruit cold, eat in when you feel like it.</p>
+              <ul class="room__facts">
+                <li><i class="ph ph-cooking-pot" aria-hidden="true"></i>Fridge and kettle</li>
+                <li><i class="ph ph-fork-knife" aria-hidden="true"></i>Dining table</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="room reveal">
+            <button class="zoom room__photo" type="button" aria-label="Enlarge photo of the terrace">
+              <img src="images/terrace.jpg" width="1200" height="933" alt="The terrace at night, lanterns lit, cane sofas along the railing" loading="lazy">
+            </button>
+            <div class="room__body">
+              <div class="room__title"><h3>Terrace</h3></div>
+              <p>Red oxide floor, cane sofas, lanterns in the evening and treetops all round. Breakfast is up here, and so are the quiet hours after dark.</p>
+              <ul class="room__facts">
+                <li><i class="ph ph-coffee" aria-hidden="true"></i>Breakfast spot</li>
+                <li><i class="ph ph-moon-stars" aria-hidden="true"></i>Evening sit-out</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== AMENITIES ===== -->
+    <section class="block block--olive amenities">
+      <svg class="float float--amen" data-float="0.2" data-rotate="-22" viewBox="0 0 120 160" aria-hidden="true"><path d="M60 4C28 36 10 80 22 130c3 12 10 22 18 26 2-30 16-62 34-86-10 32-18 62-14 86 30-10 50-46 52-86C114 42 92 14 60 4Z" fill="rgba(255,255,255,.14)"/></svg>
+      <div class="wrap">
+        <div class="section-head section-head--center" data-stagger>
+          <p class="eyebrow reveal">What is included</p>
+          <h2 class="reveal">Everything a long day at the ruins asks for.</h2>
+        </div>
+        <ul class="amen" data-stagger>
+          <li class="reveal"><span class="amen__icon"><i class="ph ph-coffee" aria-hidden="true"></i></span><h3>Breakfast every day</h3><p>Idli, dosa, upma or eggs and toast, with filter coffee.</p></li>
+          <li class="reveal"><span class="amen__icon"><i class="ph ph-cooking-pot" aria-hidden="true"></i></span><h3>Home-cooked meals</h3><p>Lunch and dinner on request, North Karnataka style.</p></li>
+          <li class="reveal"><span class="amen__icon"><i class="ph ph-wifi-high" aria-hidden="true"></i></span><h3>Wi-Fi throughout</h3><p>Fibre line, fine for calls and streaming.</p></li>
+          <li class="reveal"><span class="amen__icon"><i class="ph ph-snowflake" aria-hidden="true"></i></span><h3>Air conditioning</h3><p>In both bedrooms. Hospet summers are no joke.</p></li>
+          <li class="reveal"><span class="amen__icon"><i class="ph ph-drop" aria-hidden="true"></i></span><h3>Hot water, filtered water</h3><p>Geysers in every bath, a filter on the landing.</p></li>
+          <li class="reveal"><span class="amen__icon"><i class="ph ph-bicycle" aria-hidden="true"></i></span><h3>Cycles and scooters</h3><p>Hire by the day. We will draw you a route.</p></li>
+          <li class="reveal"><span class="amen__icon"><i class="ph ph-car" aria-hidden="true"></i></span><h3>Pick-up and drop</h3><p>From Hospet station or Vidyanagar airport.</p></li>
+          <li class="reveal"><span class="amen__icon"><i class="ph ph-map-trifold" aria-hidden="true"></i></span><h3>Guided day trips</h3><p>Hampi, Anegundi and the bear sanctuary with a local driver.</p></li>
+        </ul>
+
+        <!-- TODO: real numbers -->
+        <dl class="stats" data-stagger>
+          <div class="reveal"><dt><span data-count="2">0</span></dt><dd>Bedrooms, all yours</dd></div>
+          <div class="reveal"><dt><span data-count="15">0</span> min</dt><dd>Drive to Hampi</dd></div>
+          <div class="reveal"><dt><span data-count="4.9" data-decimals="1">0</span></dt><dd>Google rating</dd></div>
+          <div class="reveal"><dt><span data-count="3">0</span></dt><dd>Generations in Hospet</dd></div>
+        </dl>
+      </div>
+      <div class="block__tab">
+        <a class="btn btn--soft" href="#contact">Ask us anything</a>
+      </div>
+    </section>
+
+    <!-- ===== GALLERY ===== -->
+    <section class="gallery" id="gallery">
+      <div class="wrap">
+        <div class="section-head" data-stagger>
+          <p class="eyebrow reveal">Gallery</p>
+          <h2 class="reveal">Around the house</h2>
+          <p class="gallery__hint reveal">Tap a photo to see it larger.</p>
+        </div>
+        <div class="gallery__grid" data-stagger>
+          <figure class="g1 reveal"><button class="zoom" type="button" aria-label="Enlarge photo"><img src="images/gallery-1.jpg" width="1200" height="900" alt="Granite walls, a cane armchair and a wardrobe in the second bedroom" loading="lazy"></button></figure>
+          <figure class="g2 reveal"><button class="zoom" type="button" aria-label="Enlarge photo"><img src="images/gallery-2.jpg" width="1000" height="1250" alt="The garden below the terrace, bougainvillea and jasmine" loading="lazy"></button></figure>
+          <figure class="g3 reveal"><button class="zoom" type="button" aria-label="Enlarge photo"><img src="images/gallery-3.jpg" width="1000" height="750" alt="Marble bathroom with a basin, mirror and open shelves" loading="lazy"></button></figure>
+          <figure class="g4 reveal"><button class="zoom" type="button" aria-label="Enlarge photo"><img src="images/gallery-4.jpg" width="1000" height="750" alt="The guest kitchenette with a marble-top table" loading="lazy"></button></figure>
+          <figure class="g5 reveal"><button class="zoom" type="button" aria-label="Enlarge photo"><img src="images/gallery-5.jpg" width="1600" height="933" alt="The terrace at night, red oxide floor and cane sofas by the railing" loading="lazy"></button></figure>
+          <figure class="g6 reveal"><button class="zoom" type="button" aria-label="Enlarge photo"><img src="images/gallery-6.jpg" width="1000" height="750" alt="Two cane chairs on the terrace after dark" loading="lazy"></button></figure>
+          <figure class="g7 reveal"><button class="zoom" type="button" aria-label="Enlarge photo"><img src="images/gallery-7.jpg" width="1000" height="750" alt="Dressing corner with a mirror, bench, water bottle and kettle" loading="lazy"></button></figure>
+          <figure class="g8 reveal"><button class="zoom" type="button" aria-label="Enlarge photo"><img src="images/gallery-8.jpg" width="1000" height="750" alt="Bathroom with a geyser, basin and glass shower" loading="lazy"></button></figure>
+          <figure class="g9 reveal"><button class="zoom" type="button" aria-label="Enlarge photo"><img src="images/gallery-9.jpg" width="1000" height="750" alt="The second bedroom from the hall, white sheets and granite walls" loading="lazy"></button></figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== AROUND HAMPI ===== -->
+    <section class="block block--sand around" id="around">
+      <div class="wrap around__head">
+        <div data-stagger>
+          <p class="eyebrow reveal">Around Hampi</p>
+          <h2 class="reveal">Nearby, by road from our gate.</h2>
+          <!-- Road distances measured from the house (Malapanagudi) to each place's car park. -->
+          <p class="reveal">Road distances from the house. Ask us for a driver or a cycle route.</p>
+        </div>
+        <div class="around__nav" aria-hidden="true">
+          <button type="button" class="round js-scroll-prev" tabindex="-1"><i class="ph ph-arrow-left"></i></button>
+          <button type="button" class="round js-scroll-next" tabindex="-1"><i class="ph ph-arrow-right"></i></button>
+        </div>
+      </div>
+      <div class="around__scroller" id="around-scroller" tabindex="0" aria-label="Nearby places, swipe or scroll sideways" data-stagger>
+        <article class="place reveal">
+          <img src="images/place-virupaksha.jpg" width="1050" height="750" alt="The Virupaksha Temple complex at Hampi, hills behind" loading="lazy">
+          <span class="place__dist">8 km</span>
+          <h3>Virupaksha Temple</h3>
+          <p>Start early, before the stone heats up.</p>
+        </article>
+        <article class="place reveal">
+          <img src="images/place-vittala.jpg" width="1050" height="750" alt="The stone chariot at Vittala Temple" loading="lazy">
+          <span class="place__dist">11 km</span>
+          <h3>Vittala Temple and the stone chariot</h3>
+          <p>Go in the late afternoon for the light.</p>
+        </article>
+        <article class="place reveal">
+          <img src="images/place-tb-dam.jpg" width="1050" height="750" alt="Tungabhadra Dam and its reservoir" loading="lazy">
+          <span class="place__dist">12 km</span>
+          <h3>Tungabhadra Dam and gardens</h3>
+          <p>Lit up in the evenings on weekends.</p>
+        </article>
+        <article class="place reveal">
+          <img src="images/place-anegundi.jpg" width="1050" height="750" alt="The Tungabhadra river and boulders near Anegundi, seen from Anjanadri Hill" loading="lazy">
+          <span class="place__dist">22 km</span>
+          <h3>Anegundi and the coracle crossing</h3>
+          <p>Quieter than Hampi, same boulders.</p>
+        </article>
+        <article class="place reveal">
+          <img src="images/place-daroji.jpg" width="1050" height="750" alt="A sloth bear on the rocks" loading="lazy">
+          <span class="place__dist">23 km</span>
+          <h3>Daroji Sloth Bear Sanctuary</h3>
+          <p>Bears come out around 4 pm.</p>
+        </article>
+        <article class="place reveal">
+          <img src="images/place-sanapur.jpg" width="1050" height="750" alt="Sanapur Lake with boulder hills behind" loading="lazy">
+          <span class="place__dist">30 km</span>
+          <h3>Sanapur Lake</h3>
+          <p>Swim, or watch others jump off the rocks.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ===== REVIEWS ===== -->
+    <section class="reviews">
+      <div class="wrap">
+        <div class="section-head" data-stagger>
+          <p class="eyebrow reveal">Reviews</p>
+          <h2 class="reveal">From the guest book</h2>
+        </div>
+        <div class="reviews__box">
+          <!-- TODO: replace with real reviews and your real rating -->
+          <div class="reviews__summary reveal">
+            <p class="reviews__word">Excellent</p>
+            <p class="stars stars--big" aria-label="4.9 out of 5"><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i></p>
+            <p>Based on <strong>38 reviews</strong> on Google</p>
+          </div>
+          <div class="reviews__grid" data-stagger>
+            <blockquote class="review reveal">
+              <header>
+                <span class="avatar" style="--hue:14">M</span>
+                <span><strong>Meghana R.</strong><small>Bengaluru, 2 months ago</small></span>
+              </header>
+              <p class="stars"><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i></p>
+              <p>We came for two nights and stayed five. The breakfast alone is worth the drive from Bengaluru, and the room was cool even in April.</p>
+            </blockquote>
+            <blockquote class="review reveal">
+              <header>
+                <span class="avatar" style="--hue:140">T</span>
+                <span><strong>Tomas and Lea</strong><small>Leipzig, 4 months ago</small></span>
+              </header>
+              <p class="stars"><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i></p>
+              <p>Our host drew us a cycling route to Anegundi that no guidebook has. Quiet, clean, properly looked after.</p>
+            </blockquote>
+            <blockquote class="review reveal">
+              <header>
+                <span class="avatar" style="--hue:220">A</span>
+                <span><strong>Arjun and family</strong><small>Hyderabad, 6 months ago</small></span>
+              </header>
+              <p class="stars"><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i></p>
+              <p>Travelling with two kids and grandparents. The courtyard kept everyone happy, and dinner was ready when we got back from the bear sanctuary.</p>
+            </blockquote>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section class="contact" id="contact">
+      <div class="wrap">
+        <div class="contact__card">
+          <div class="contact__info" data-stagger>
+            <p class="eyebrow reveal">Plan your stay</p>
+            <h2 class="reveal">Send us your dates.</h2>
+            <p class="reveal">We reply on WhatsApp, usually within the hour. No booking fee, no deposit for stays under three nights.</p>
+
+            <!-- TODO: house number / street for the address, and a real email. The WhatsApp number lives in script.js -->
+            <dl class="contact__details reveal">
+              <div><dt><i class="ph ph-map-pin" aria-hidden="true"></i>Address</dt><dd>Malapanagudi, on the Hospet to Hampi road<br>Vijayanagara district, Karnataka 583239</dd></div>
+              <div><dt><i class="ph ph-phone" aria-hidden="true"></i>Phone and WhatsApp</dt><dd><a href="tel:+916360250021">+91 63602 50021</a></dd></div>
+              <div><dt><i class="ph ph-envelope-simple" aria-hidden="true"></i>Email</dt><dd><a href="mailto:stay@kishkindahouse.in">stay@kishkindahouse.in</a></dd></div>
+              <div><dt><i class="ph ph-clock" aria-hidden="true"></i>Check-in and out</dt><dd>From 1 pm, until 11 am</dd></div>
+            </dl>
+
+            <div class="contact__map reveal">
+              <iframe src="https://maps.google.com/maps?q=15.2816,76.427718&z=15&hl=en&output=embed" title="Map showing where the homestay is" loading="lazy" allowfullscreen referrerpolicy="no-referrer-when-downgrade"></iframe>
+              <a class="pill" href="https://maps.app.goo.gl/dJ26DpSck7o4zAxC6" target="_blank" rel="noopener"><span class="pill__icon"><i class="ph ph-map-pin" aria-hidden="true"></i></span><span>Open in Google Maps</span></a>
+            </div>
+          </div>
+
+          <form class="enquiry reveal reveal--late" id="enquiry" novalidate>
+            <h3>Request to book</h3>
+            <div class="field">
+              <label for="f-name">Your name</label>
+              <input id="f-name" name="name" type="text" autocomplete="name" placeholder="Asha Rao" required>
+              <p class="field__error">Please tell us your name.</p>
+            </div>
+
+            <div class="field-row">
+              <div class="field">
+                <label for="f-in">Check-in</label>
+                <input id="f-in" name="checkin" type="date" required>
+                <p class="field__error">Pick a check-in date.</p>
+              </div>
+              <div class="field">
+                <label for="f-out">Check-out</label>
+                <input id="f-out" name="checkout" type="date" required>
+                <p class="field__error">Check-out must be after check-in.</p>
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="f-guests">Guests</label>
+              <select id="f-guests" name="guests">
+                <option>1</option>
+                <option selected>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5 or more</option>
+              </select>
+              <p class="field__hint">The whole house is yours, whatever the number.</p>
+            </div>
+
+            <div class="field">
+              <label for="f-msg">Anything else <span class="optional">(optional)</span></label>
+              <textarea id="f-msg" name="message" rows="3" placeholder="Arrival time, dietary needs, pick-up from the station..."></textarea>
+              <p class="field__help">We will open WhatsApp with your message filled in. Nothing is stored on this site.</p>
+            </div>
+
+            <button class="btn btn--primary btn--block" type="submit">Send on WhatsApp</button>
+            <p class="enquiry__sent" id="enquiry-sent" aria-live="polite">WhatsApp should have opened. If it did not, <a id="enquiry-link" href="#contact" target="_blank" rel="noopener">tap here to open it</a>.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FAQ ===== -->
+    <section class="faq" id="faq">
+      <div class="wrap faq__grid">
+        <div class="faq__aside reveal">
+          <div class="callout">
+            <h2>Frequently asked</h2>
+            <p>Not here? Send us a message, we are quick to reply.</p>
+            <a class="pill pill--phone" href="tel:+916360250021">
+              <span class="pill__icon"><i class="ph ph-phone-call" aria-hidden="true"></i></span>
+              <span>+91 63602 50021</span>
+            </a>
+          </div>
+        </div>
+        <div class="faq__list" data-stagger>
+          <!-- TODO: edit answers to match your house rules -->
+          <div class="faq__item reveal">
+            <button class="faq__q" type="button" aria-expanded="false" aria-controls="faq-1" id="faq-1-btn">How far is the house from Hampi?<i class="ph ph-plus" aria-hidden="true"></i></button>
+            <div class="faq__a" id="faq-1" role="region" aria-labelledby="faq-1-btn"><div><p>About 8 km to Virupaksha Temple, which is 10 to 15 minutes by car or auto. Hospet railway station is 6 km the other way, about 10 minutes.</p></div></div>
+          </div>
+          <div class="faq__item reveal">
+            <button class="faq__q" type="button" aria-expanded="false" aria-controls="faq-2" id="faq-2-btn">Is parking available?<i class="ph ph-plus" aria-hidden="true"></i></button>
+            <div class="faq__a" id="faq-2" role="region" aria-labelledby="faq-2-btn"><div><p>Yes, there is covered parking for two cars inside the gate, and space for bikes.</p></div></div>
+          </div>
+          <div class="faq__item reveal">
+            <button class="faq__q" type="button" aria-expanded="false" aria-controls="faq-3" id="faq-3-btn">Do you serve food?<i class="ph ph-plus" aria-hidden="true"></i></button>
+            <div class="faq__a" id="faq-3" role="region" aria-labelledby="faq-3-btn"><div><p>Breakfast is included every day. Lunch and dinner are home-cooked and vegetarian, and we ask that you tell us by the morning so we can shop. Non-vegetarian dinner can be arranged with a day's notice.</p></div></div>
+          </div>
+          <div class="faq__item reveal">
+            <button class="faq__q" type="button" aria-expanded="false" aria-controls="faq-4" id="faq-4-btn">Does the family live at the house?<i class="ph ph-plus" aria-hidden="true"></i></button>
+            <div class="faq__a" id="faq-4" role="region" aria-labelledby="faq-4-btn"><div><p>Yes, we live downstairs. The whole upstairs is yours, with its own entrance and key, so you can come and go as you like. We never let it to more than one group at a time.</p></div></div>
+          </div>
+          <div class="faq__item reveal">
+            <button class="faq__q" type="button" aria-expanded="false" aria-controls="faq-5" id="faq-5-btn">Can you arrange a driver or a guide?<i class="ph ph-plus" aria-hidden="true"></i></button>
+            <div class="faq__a" id="faq-5" role="region" aria-labelledby="faq-5-btn"><div><p>Yes. We work with two drivers we trust, and can book a registered guide for Hampi. Cycles and scooters can be hired from the house.</p></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="foot">
+    <div class="foot__inner">
+      <svg class="float float--f1" data-float="0.25" data-rotate="-16" viewBox="0 0 120 160" aria-hidden="true"><path d="M60 4C28 36 10 80 22 130c3 12 10 22 18 26 2-30 16-62 34-86-10 32-18 62-14 86 30-10 50-46 52-86C114 42 92 14 60 4Z" fill="var(--leaf)"/></svg>
+      <svg class="float float--f2" data-float="0.4" data-rotate="20" viewBox="0 0 120 160" aria-hidden="true"><path d="M60 4C28 36 10 80 22 130c3 12 10 22 18 26 2-30 16-62 34-86-10 32-18 62-14 86 30-10 50-46 52-86C114 42 92 14 60 4Z" fill="var(--leaf-2)"/></svg>
+
+      <div class="wrap foot__grid">
+        <div class="foot__cta" data-stagger>
+          <h2 class="reveal">Come back to somewhere calm.</h2>
+          <a class="btn btn--primary js-whatsapp reveal" href="#contact">Book your stay</a>
+        </div>
+        <div class="foot__contact reveal reveal--late">
+          <p class="eyebrow">Contact</p>
+          <a class="pill pill--phone" href="tel:+916360250021">
+            <span class="pill__icon"><i class="ph ph-phone-call" aria-hidden="true"></i></span>
+            <span>+91 63602 50021</span>
+          </a>
+          <a class="foot__mail" href="mailto:stay@kishkindahouse.in">stay@kishkindahouse.in</a>
+          <p class="foot__addr">Malapanagudi, Hospet to Hampi road, Karnataka 583239</p>
+        </div>
+      </div>
+
+      <div class="wrap foot__bar">
+        <!-- TODO: registration number, if any -->
+        <p>© <span id="year"></span> Gotul Hampi Homestay. Registered homestay, Karnataka Tourism.</p>
+        <p class="foot__credits">Photos of nearby places from Wikimedia Commons: <a href="https://commons.wikimedia.org/wiki/File:Complex_of_Virupaksha_Temple,_Hampi_(02).jpg" target="_blank" rel="noopener">Virupaksha</a> by iMahesh (CC BY-SA 4.0), <a href="https://commons.wikimedia.org/wiki/File:IMG_1966_Stone_chariot_in_Vittala_temple.jpg" target="_blank" rel="noopener">Vittala</a> by Shivajidesai29 (CC BY-SA 4.0), <a href="https://commons.wikimedia.org/wiki/File:Tungabhadra_Dam.jpg" target="_blank" rel="noopener">Tungabhadra Dam</a> by Sanyam Bahga (CC BY-SA 3.0), <a href="https://commons.wikimedia.org/wiki/File:HBPA_N_467_Coracle_Crossing_Zoom_from_Anjanadri_Hill.jpg" target="_blank" rel="noopener">Anegundi</a> by VasuVR (CC BY-SA 4.0), <a href="https://commons.wikimedia.org/wiki/File:SlothBearMotherCub.jpg" target="_blank" rel="noopener">Sloth bear</a> by L. Shyamal (CC BY-SA 3.0), <a href="https://commons.wikimedia.org/wiki/File:HBPA_S_03131301_Sanapur_lake_reservoir_1.jpg" target="_blank" rel="noopener">Sanapur</a> by VasuVR (CC BY-SA 4.0). Cropped. All other photos are ours.</p>
+        <div class="foot__social">
+          <!-- TODO: real Instagram link -->
+          <a href="https://instagram.com/" target="_blank" rel="noopener" aria-label="Instagram"><i class="ph ph-instagram-logo" aria-hidden="true"></i></a>
+          <a href="https://maps.app.goo.gl/dJ26DpSck7o4zAxC6" target="_blank" rel="noopener" aria-label="Google Maps"><i class="ph ph-map-pin" aria-hidden="true"></i></a>
+          <a class="js-whatsapp" href="#contact" aria-label="WhatsApp"><i class="ph ph-whatsapp-logo" aria-hidden="true"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp button, shown on phones and tablets -->
+  <a class="fab js-whatsapp" id="fab" href="#contact"><i class="ph ph-whatsapp-logo" aria-hidden="true"></i><span>Book on WhatsApp</span></a>
+
+  <!-- Photo viewer -->
+  <dialog class="lightbox" id="lightbox" aria-label="Photo viewer">
+    <div class="lightbox__stage" id="lightbox-stage">
+      <img id="lightbox-img" src="" alt="">
+    </div>
+    <p class="lightbox__caption" id="lightbox-caption"></p>
+    <button class="lightbox__btn lightbox__close" type="button" id="lightbox-close" aria-label="Close"><i class="ph ph-x" aria-hidden="true"></i></button>
+    <button class="lightbox__btn lightbox__prev" type="button" id="lightbox-prev" aria-label="Previous photo"><i class="ph ph-arrow-left" aria-hidden="true"></i></button>
+    <button class="lightbox__btn lightbox__next" type="button" id="lightbox-next" aria-label="Next photo"><i class="ph ph-arrow-right" aria-hidden="true"></i></button>
+  </dialog>
+
+  <script src="script.js"></script>
+</body>
+</html>
