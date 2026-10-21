@@ -4,26 +4,29 @@
    "slabs" that float on the page, with staggered fade-up reveals. */
 
 :root {
-  --bg: #faf7f1;
+  --bg: #ffffff;
   --surface: #ffffff;
-  --sand: #f3ecdc;
-  --sand-2: #fbf2d6;
-  --olive: #66724f;
-  --olive-ink: #f7f5ee;
-  --ink: #1f1b16;
-  --muted: #6b655c;
-  --line: #e6dfd0;
-  --accent: #f0b429;
-  --accent-hover: #f6c044;
-  --accent-ink: #1f1b16;
-  --leaf: #7f9a4c;
-  --leaf-2: #a7bd6a;
-  --star: #f0b429;
-  --shadow: 0 24px 60px rgba(63, 48, 20, 0.12);
-  --shadow-sm: 0 8px 24px rgba(63, 48, 20, 0.08);
+  --sand: #f4f7ee;
+  --sand-2: #eaf3d8;
+  --olive: #b7c8ae;
+  --olive-ink: #ffffff;
+  --ink: #1d1d1b;
+  --muted: #666b60;
+  --line: #e3e8da;
+  --accent: #f3c81d;
+  --accent-hover: #f7d44a;
+  --accent-ink: #1d1d1b;
+  --green: #5bab3c;
+  --green-hover: #4f9a33;
+  --leaf: #5bab3c;
+  --leaf-2: #a6d16a;
+  --star: #f3c81d;
+  --shadow: 0 24px 60px rgba(40, 60, 20, 0.10);
+  --shadow-sm: 0 8px 24px rgba(40, 60, 20, 0.07);
 
   --head: "Outfit", system-ui, sans-serif;
   --sans: "Manrope", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --script: "Caveat", "Segoe Script", cursive;
 
   --r-xl: 36px;
   --r-lg: 24px;
@@ -183,7 +186,8 @@ section { padding: 4.5rem 0; }
   transition: transform 0.35s var(--ease), background-color 0.25s var(--ease), color 0.25s var(--ease), border-color 0.25s var(--ease), box-shadow 0.35s var(--ease);
 }
 .btn:active { transform: scale(0.97); }
-.btn--primary { background: var(--accent); color: var(--accent-ink); box-shadow: 0 10px 24px rgba(240, 180, 41, 0.3); }
+.btn--primary { background: var(--accent); color: var(--accent-ink); box-shadow: 0 10px 24px rgba(243, 200, 29, 0.28); }
+.btn--green { background: var(--green); color: #fff; box-shadow: 0 10px 24px rgba(91, 171, 60, 0.28); }
 .btn--soft { background: var(--sand-2); color: var(--ink); border-color: color-mix(in srgb, var(--accent) 45%, transparent); }
 .btn--sm { min-height: 44px; padding: 0.6rem 1.25rem; font-size: 0.875rem; }
 .btn--block { width: 100%; }
@@ -274,7 +278,7 @@ section { padding: 4.5rem 0; }
 @media (hover: hover) and (pointer: fine) { .brand:hover .brand__mark { transform: rotate(-8deg) scale(1.05); } }
 .brand__text { display: flex; flex-direction: column; line-height: 1.1; }
 .brand__name { font-family: var(--head); font-size: 1.25rem; font-weight: 500; letter-spacing: -0.01em; }
-.brand__place { font-size: 0.68rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); }
+.brand__place { font-family: var(--script); font-size: 1.05rem; line-height: 1; margin-top: 0.1rem; color: var(--muted); }
 
 .menu { display: flex; align-items: center; gap: 0.25rem; }
 .menu a {
@@ -366,7 +370,7 @@ section { padding: 4.5rem 0; }
   margin: clamp(3rem, 8vh, 6rem) clamp(1rem, 5vw, 5rem);
   max-width: 560px;
   padding: clamp(1.75rem, 4vw, 3rem);
-  background: color-mix(in srgb, var(--bg) 94%, transparent);
+  background: color-mix(in srgb, var(--sand) 94%, transparent);
   backdrop-filter: blur(6px);
   -webkit-backdrop-filter: blur(6px);
   border-radius: var(--r-lg);
@@ -425,7 +429,7 @@ section { padding: 4.5rem 0; }
 }
 .block--sand { background: var(--sand); }
 .block--olive { background: var(--olive); color: var(--olive-ink); }
-.block--olive .eyebrow { color: color-mix(in srgb, var(--olive-ink) 75%, transparent); }
+.block--olive .eyebrow { color: color-mix(in srgb, var(--olive-ink) 85%, transparent); }
 .block--olive .eyebrow::after { background: linear-gradient(var(--leaf-2), var(--leaf-2)) 0 100% / 2px 100% no-repeat, linear-gradient(var(--leaf-2), var(--leaf-2)) 100% 0 / 2px 100% no-repeat; }
 .block--olive .section-head p:not(.eyebrow) { color: color-mix(in srgb, var(--olive-ink) 80%, transparent); }
 
@@ -501,8 +505,8 @@ section { padding: 4.5rem 0; }
   display: flex; flex-direction: column;
   padding: 0.75rem;
   border-radius: var(--r-lg);
-  background: linear-gradient(160deg, var(--sand-2), var(--sand) 60%, var(--surface));
-  border: 1px solid color-mix(in srgb, var(--accent) 22%, transparent);
+  background: linear-gradient(180deg, var(--surface) 0%, var(--surface) 45%, var(--sand-2) 100%);
+  border: 1px solid var(--line);
   transition: transform 0.5s var(--ease), box-shadow 0.5s var(--ease);
 }
 .room--shared { background: linear-gradient(160deg, color-mix(in srgb, var(--leaf-2) 28%, var(--surface)), var(--sand) 70%, var(--surface)); border-color: color-mix(in srgb, var(--leaf) 30%, transparent); }
@@ -511,11 +515,13 @@ section { padding: 4.5rem 0; }
   .room:hover .room__photo img { transform: scale(1.05); }
 }
 .room__photo {
-  display: block; width: 100%; padding: 0; border: 0;
-  background: none; cursor: zoom-in;
+  display: block; width: 100%; padding: 0;
+  border: 5px solid var(--accent);
+  background: var(--accent); cursor: zoom-in;
   border-radius: var(--r-md);
   overflow: hidden;
 }
+.room__photo img { border-radius: calc(var(--r-md) - 5px); }
 .room__photo img { width: 100%; aspect-ratio: 9 / 7; object-fit: cover; transition: transform 1s var(--ease); }
 .room__body { padding: 1.1rem 0.6rem 0.75rem; display: flex; flex-direction: column; gap: 0.65rem; flex: 1; }
 .room__title { display: flex; justify-content: space-between; align-items: baseline; gap: 0.5rem; flex-wrap: wrap; }
@@ -561,27 +567,29 @@ section { padding: 4.5rem 0; }
   grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
 }
 .amen li {
-  padding: 1.4rem;
-  background: color-mix(in srgb, var(--olive-ink) 16%, transparent);
-  border: 1px solid color-mix(in srgb, var(--olive-ink) 12%, transparent);
+  padding: 1.5rem;
+  background: var(--surface);
+  color: var(--ink);
+  border: 1px solid color-mix(in srgb, var(--olive-ink) 50%, transparent);
   border-radius: var(--r-lg);
-  transition: transform 0.5s var(--ease), background-color 0.4s var(--ease);
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.5s var(--ease), box-shadow 0.4s var(--ease);
 }
 @media (hover: hover) and (pointer: fine) {
-  .amen li:hover { transform: translateY(-5px); background: color-mix(in srgb, var(--olive-ink) 24%, transparent); }
+  .amen li:hover { transform: translateY(-5px); box-shadow: var(--shadow); }
   .amen li:hover .amen__icon { transform: rotate(-8deg) scale(1.06); }
 }
 .amen__icon {
-  width: 52px; height: 52px;
+  width: 56px; height: 56px;
   display: inline-flex; align-items: center; justify-content: center;
-  border-radius: 14px;
-  background: var(--surface); color: var(--ink);
-  font-size: 1.5rem;
+  border-radius: 16px;
+  background: var(--sand-2); color: var(--ink);
+  font-size: 1.6rem;
   margin-bottom: 1rem;
   transition: transform 0.5s var(--ease);
 }
-.amen h3 { font-size: 1.1rem; color: inherit; }
-.amen p { font-size: 0.875rem; color: color-mix(in srgb, var(--olive-ink) 78%, transparent); margin-top: 0.4rem; }
+.amen h3 { font-size: 1.15rem; color: var(--ink); }
+.amen p { font-size: 0.875rem; color: var(--muted); margin-top: 0.4rem; }
 .float--amen { right: 6%; top: 8%; --base: 40deg; width: clamp(70px, 9vw, 140px); filter: none; }
 
 .stats {
@@ -590,12 +598,13 @@ section { padding: 4.5rem 0; }
   gap: 1rem;
   margin: 3rem 0 0;
   padding: 1.5rem 0 0;
-  border-top: 1px solid color-mix(in srgb, var(--olive-ink) 20%, transparent);
+  border-top: 1px solid color-mix(in srgb, var(--olive-ink) 35%, transparent);
 }
 @media (min-width: 700px) { .stats { grid-template-columns: repeat(4, 1fr); } }
 .stats div { text-align: center; }
 .stats dt { font-family: var(--head); font-size: clamp(2rem, 4vw, 3rem); line-height: 1; font-weight: 400; }
-.stats dd { margin: 0.35rem 0 0; font-size: 0.85rem; color: color-mix(in srgb, var(--olive-ink) 78%, transparent); }
+.stats dd { margin: 0.35rem 0 0; font-size: 0.85rem; color: color-mix(in srgb, var(--olive-ink) 88%, transparent); }
+.stats sup { font-size: 0.45em; vertical-align: top; margin-left: 0.1em; }
 
 /* ---------- gallery ---------- */
 .gallery__hint { font-size: 0.9rem; }
@@ -811,7 +820,7 @@ input:focus, select:focus, textarea:focus { outline: none; border-color: var(--a
   position: relative;
   margin: 0 var(--gutter);
   border-radius: var(--r-xl) var(--r-xl) 0 0;
-  background: linear-gradient(180deg, var(--sand-2) 0%, color-mix(in srgb, var(--leaf-2) 20%, var(--sand-2)) 55%, var(--bg) 100%);
+  background: linear-gradient(180deg, var(--sand-2) 0%, color-mix(in srgb, var(--leaf-2) 22%, var(--sand-2)) 55%, var(--bg) 100%);
   overflow: hidden;
   padding-top: clamp(3rem, 6vw, 5rem);
 }

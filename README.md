@@ -62,8 +62,8 @@ Keep each file under about 400 KB. A free tool such as Squoosh (squoosh.app) doe
 
 ## Touch and small screens
 
-Every button, link and form field is at least 48px tall. Hover effects only appear on devices with a mouse. On phones and tablets the menu collapses behind a round button, a floating "Book on WhatsApp" button follows the visitor (hidden while the top of the page or the form is on screen), the nearby strip and the reviews swipe sideways, and any room or gallery photo can be tapped to open full screen, then swiped left or right, or swiped down to close. Form text is 16px so iPhones do not zoom in on focus.
+Every button, link and form field is at least 48px tall. Hover effects only appear on devices with a mouse. On phones and tablets the menu collapses behind a round button, a floating "Book on WhatsApp" button follows the visitor (hidden while the top of the page or the form is on screen), the nearby strip swipes sideways, and any room or gallery photo can be tapped to open full screen, then swiped left or right, or swiped down to close. Form text is 16px so iPhones do not zoom in on focus.
 
-## Publishing
+## Hosting elsewhere
 
-Any static host works: Cloudflare Pages, Netlify, GitHub Pages or a plain web server. Upload the four files and the `images` folder.
+Any static host works: Cloudflare Pages, Netlify or a plain web server. Upload the four files and the `images` folder.
