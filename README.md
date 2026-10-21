@@ -36,9 +36,8 @@ Still placeholder text in `index.html`, search for `TODO`:
 1. **About section story** (family of four, three generations, opened in 2024).
 2. **Address.** Only the village and pin code are real. Add the house number or street in the contact section and footer.
 3. **FAQ answers.** Parking, meals, drivers, cycle hire and the check-in times are samples.
-4. **Footer line** "Registered homestay, Karnataka Tourism". Remove if not true.
-5. **Instagram link** in the footer.
-6. **Logo.** The small house mark in the header is an inline SVG. Swap it for your own logo if you make one, and update the favicon at the top of `index.html`.
+4. **Instagram link** in the footer.
+5. **Logo.** The small house mark in the header is an inline SVG. Swap it for your own logo if you make one, and update the favicon at the top of `index.html`.
 
 ## Publishing
 
