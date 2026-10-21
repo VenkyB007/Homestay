@@ -32,7 +32,7 @@ Everything respects the "reduce motion" setting on phones and computers. The sit
 1. **Name and tagline.** "Gotul Hampi Homestay" appears in the `<title>`, the header, the footer and in `script.js` (the WhatsApp greeting). Find and replace it.
 2. **WhatsApp number.** In `script.js`, set `WHATSAPP_NUMBER` to your number as digits only, with the country code, for example `919876543210`. Also update the `tel:` links (header, FAQ, contact and footer) and the visible numbers.
 3. **Google rating.** The badge in the hero, the "4.9" in the stats and the review summary all show invented numbers. Replace them with yours and link the badge to your Google Maps listing.
-4. **Address, email, check-in times.** Contact section and footer of `index.html`.
+4. **Address and check-in times.** Contact section and footer of `index.html`.
 5. **Rooms and prices.** The four `<article class="room">` blocks. Prices shown are samples.
 6. **Nearby distances.** The "Around Hampi" strip. Distances are rough guesses from Hospet town and should be checked.
 7. **Reviews.** The three cards in "From the guest book" are invented. Replace with real Google reviews or remove.
